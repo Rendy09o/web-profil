@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Es & Salju - Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Falling Snow Animation -->
+    <div class="snow-container" id="snow-container"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>❄️ Portfolio Es & Salju</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Beranda</a>
+                <a href="#about" class="nav-link">Tentang</a>
+                <a href="#projects" class="nav-link">Proyek</a>
+                <a href="#skills" class="nav-link">Keahlian</a>
+                <a href="#contact" class="nav-link">Kontak</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="frost-text">Rendy Ferdiansyah</span>
+            </h1>
+            <h2 class="hero-subtitle">
+                <span class="typewriter">Progammer</span>
+            </h2>
+            <p class="hero-description">
+                Menciptakan pengalaman digital yang indah dan fungsional, 
+                terinspirasi dari keindahan musim dingin dan kesempurnaan kristal es.
+            </p>
+            <button class="cta-button" onclick="scrollToSection('about')">
+                <i class="fas fa-snowflake"></i>
+                Jelajahi Karya Saya
+            </button>
+        </div>
+        
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="foto.jfif" alt="Profile" class="profile-img">
+                        <div class="frost-overlay"></div>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <h2 class="section-title">Tentang Saya</h2>
+                    <p class="about-description">
+                        Seperti keindahan kristal es yang terbentuk dengan sempurna, saya percaya bahwa 
+                        setiap kode yang ditulis harus memiliki struktur yang elegan dan fungsionalitas 
+                        yang optimal. Dengan pengalaman lebih dari 5 tahun dalam pengembangan web, 
+                        saya mengkhususkan diri dalam menciptakan aplikasi yang tidak hanya indah 
+                        secara visual, tetapi juga memberikan pengalaman pengguna yang luar biasa.
+                    </p>
+                    <p class="about-description">
+                        Ketika tidak sedang coding, Anda akan menemukan saya menikmati keindahan 
+                        musim dingin, mengambil inspirasi dari pola-pola alami es dan salju untuk 
+                        diterapkan dalam desain digital saya.
+                    </p>
+                    
+                    <div class="skills-preview">
+                        <h3>Keahlian Utama:</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">UI/UX Design</span>
+                        </div>
+                    </div>
+                    
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Proyek Unggulan</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card ice-block">
+                    <div class="project-image">
+                        <img src="ice_background_1.jpg" alt="E-Commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Platform E-Commerce</h3>
+                        <p class="project-description">
+                            Aplikasi e-commerce lengkap dengan sistem pembayaran, 
+                            manajemen inventori, dan dashboard admin yang komprehensif.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card ice-block">
+                    <div class="project-image">
+                        <img src="snow_background_1.jpg" alt="Weather App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Aplikasi Cuaca</h3>
+                        <p class="project-description">
+                            Aplikasi cuaca real-time dengan animasi yang indah dan 
+                            prediksi cuaca akurat untuk berbagai lokasi.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">API Integration</span>
+                            <span class="tech-tag">CSS Animations</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card ice-block">
+                    <div class="project-image">
+                        <img src="frozen_lake_1.jpg" alt="Task Management">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Manajemen Tugas</h3>
+                        <p class="project-description">
+                            Aplikasi manajemen tugas kolaboratif dengan fitur real-time 
+                            dan sistem notifikasi yang terintegrasi.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Keahlian & Expertise</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-snowflake">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3 class="skill-name">HTML/CSS</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="95">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <span class="progress-text">95%</span>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-snowflake">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3 class="skill-name">JavaScript</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="90">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <span class="progress-text">90%</span>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-snowflake">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="skill-name">React</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="85">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <span class="progress-text">85%</span>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-snowflake">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3 class="skill-name">Node.js</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="80">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <span class="progress-text">80%</span>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-snowflake">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3 class="skill-name">Python</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="75">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <span class="progress-text">75%</span>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-snowflake">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="skill-name">UI/UX Design</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="88">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <span class="progress-text">88%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        
+        <div class="container">
+            <h2 class="section-title">Hubungi Saya</h2>
+            
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form class="contact-form ice-sheet" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+                            <label for="name">Nama</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Anda" required>
+                            <label for="email">Email</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subjek" required>
+                            <label for="subject">Subjek</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Pesan Anda" rows="5" required></textarea>
+                            <label for="message">Pesan</label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>your.email@example.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Telepon</h3>
+                            <p>+62 123 456 7890</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Lokasi</h3>
+                            <p>Jakarta, Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Portfolio Es & Salju. Dibuat dengan ❄️ dan ❤️</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
